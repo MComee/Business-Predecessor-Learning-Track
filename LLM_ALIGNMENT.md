@@ -531,3 +531,302 @@ Before content is saved to this repository, the LLM must verify that it is:
 - and modular enough to expand later.
 
 The LLM must not save private context, private project references, private repository references, or unrelated personal strategy into this public repository.
+
+---
+
+## 3. Operating Workflow
+
+The repository operates on historical targets. A historical target is the primary unit of study. The Four Pillars are analytical lenses applied to that target.
+
+### 3.1 Target Selection Rule
+
+After alignment, the first responsibility is determining whether the user wishes to:
+
+- analyze existing repository knowledge;
+- continue an existing target;
+- compare multiple targets;
+- create a new target;
+- or discover a new target for study.
+
+If no target exists, or if the user does not know what target to study, the repository enters Target Discovery Mode.
+
+### 3.2 Target Discovery Mode
+
+When a user does not know what target to study, recommendations should be generated.
+
+Recommendations should prioritize educational value across:
+
+- Business & Organizations;
+- Leadership & Human Systems;
+- Capital & Wealth;
+- Decision Making & Judgment.
+
+Potential targets include:
+
+- companies;
+- founders;
+- leaders;
+- investors;
+- operators;
+- failures;
+- turnarounds;
+- acquisitions;
+- crises;
+- industries;
+- business events.
+
+Each recommendation should explain:
+
+- why the target matters;
+- which pillars it strengthens;
+- what unique lessons it offers.
+
+### 3.3 Coverage-Based Recommendation Rule
+
+The repository should continuously identify educational gaps.
+
+Recommendations should strengthen areas with weak coverage.
+
+Examples:
+
+- too many successes -> recommend failures;
+- too many technology companies -> recommend other industries;
+- too much leadership -> recommend capital allocation;
+- too much modern history -> recommend earlier business history;
+- too much American business history -> recommend international targets;
+- too many large public companies -> recommend small-company, private-company, startup, family-business, or founder-led targets when sources allow.
+
+The objective is balanced educational coverage.
+
+### 3.4 Curriculum-Building Rule
+
+Targets should not be treated as isolated studies.
+
+The repository should gradually evolve into a structured learning library.
+
+New targets should ideally contribute:
+
+- new industries;
+- new business models;
+- new leadership approaches;
+- new capital-allocation approaches;
+- new decision-making patterns;
+- new failure patterns;
+- new turnaround patterns.
+
+The repository should seek balance across:
+
+- industries;
+- geographies;
+- eras;
+- company sizes;
+- business models;
+- leadership styles;
+- capital-allocation styles;
+- successes;
+- failures;
+- recoveries.
+
+### 3.5 Continuous Knowledge Capture Rule
+
+Whenever meaningful learning occurs:
+
+- repository artifacts must be updated;
+- sources must be preserved;
+- lessons must remain attached to historical targets;
+- synthesis artifacts may be updated when recurring patterns emerge.
+
+Learning should accumulate rather than be repeatedly rediscovered.
+
+---
+
+## 4. Repository Structure & Indexing Rules
+
+The repository must remain navigable for humans and LLMs. It should behave like a clear file tree that can be entered one directory at a time.
+
+### 4.1 Local Index Rule
+
+Every directory must contain:
+
+```text
+INDEX.md
+```
+
+The index must describe only:
+
+- files directly inside that directory;
+- subdirectories directly inside that directory.
+
+Indexes must not recursively enumerate the entire repository.
+
+The root `INDEX.md` must describe only the files and subdirectories directly visible from the repository root.
+
+### 4.2 Navigation Rule
+
+Directory names must be:
+
+- human-readable;
+- LLM-readable;
+- descriptive;
+- stable.
+
+Names should communicate purpose without requiring additional context.
+
+Avoid vague names such as:
+
+```text
+misc/
+temp/
+stuff/
+notes/
+```
+
+Prefer descriptive names such as:
+
+```text
+targets/
+companies/
+people/
+comparison-studies/
+failure-cases/
+synthesis/
+```
+
+### 4.3 File Naming Rule
+
+File names must communicate content and purpose clearly.
+
+Prefer descriptive names over generic names.
+
+Good examples:
+
+```text
+business-and-organization.md
+leadership-and-human-systems.md
+capital-and-wealth.md
+decision-making-and-judgment.md
+lessons-to-copy.md
+lessons-to-avoid.md
+sources.md
+```
+
+Avoid:
+
+```text
+notes.md
+data.md
+misc.md
+research.md
+```
+
+### 4.4 Historical Target Structure
+
+The repository should organize knowledge around historical targets.
+
+The target is the primary organizational unit.
+
+The Four Pillars are analytical lenses applied to the target.
+
+Recommended structure:
+
+```text
+/
+  README.md
+  LLM_ALIGNMENT.md
+  INDEX.md
+
+  targets/
+    INDEX.md
+
+    companies/
+      INDEX.md
+      example-company/
+        INDEX.md
+        overview.md
+        business-and-organization.md
+        leadership-and-human-systems.md
+        capital-and-wealth.md
+        decision-making-and-judgment.md
+        lessons-to-copy.md
+        lessons-to-avoid.md
+        sources.md
+
+    people/
+      INDEX.md
+      example-person/
+        INDEX.md
+        profile.md
+        companies.md
+        leadership-and-human-systems.md
+        capital-and-wealth.md
+        decision-making-and-judgment.md
+        lessons-to-copy.md
+        lessons-to-avoid.md
+        sources.md
+
+    comparison-studies/
+      INDEX.md
+
+    failure-cases/
+      INDEX.md
+
+  synthesis/
+    INDEX.md
+    recurring-patterns.md
+    cross-company-lessons.md
+    failure-patterns.md
+```
+
+This structure is a recommendation, not a permanent limit. New directories may be added when needed, but they must follow the local index, navigation, and file-naming rules.
+
+### 4.5 Index Maintenance Rule
+
+Whenever a file or directory is:
+
+- created;
+- renamed;
+- moved;
+- deleted;
+
+all affected local indexes must be updated immediately.
+
+Repository navigation must remain accurate.
+
+If a file's title or purpose changes, the local index entry should also be updated.
+
+### 4.6 Repository Philosophy
+
+The repository is intended to become:
+
+> A historically grounded library of business, leadership, capital, and decision-making knowledge.
+
+The repository is not intended to become:
+
+> A generic business-school note collection.
+
+The repository prioritizes:
+
+- real people;
+- real organizations;
+- real incentives;
+- real decisions;
+- real outcomes;
+- real successes;
+- real failures;
+- real consequences.
+
+The repository is not intended to create heroes or villains.
+
+It is intended to study:
+
+- people;
+- organizations;
+- systems;
+- incentives;
+- decisions;
+- outcomes;
+- consequences.
+
+Theory exists to explain history.
+
+History does not exist to illustrate theory.
