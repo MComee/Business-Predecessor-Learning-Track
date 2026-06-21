@@ -1,0 +1,4 @@
+relationship_id,subject_id,relationship,object_id,evidence_path,source_ids,confidence,status
+rel:vanderbilt:used-theme-infrastructure-control,target:person:cornelius-vanderbilt,used-strategy,theme:infrastructure-control,targets/people/cornelius-vanderbilt/profile.md,source:the-first-tycoon,medium,candidate
+rel:vanderbilt:operated-in-shipping,target:person:cornelius-vanderbilt,operated-in,industry:shipping,targets/people/cornelius-vanderbilt/profile.md,source:the-first-tycoon,medium,candidate
+rel:vanderbilt:operated-in-railroads,target:person:cornelius-vanderbilt,operated-in,industry:railroads,targets/people/cornelius-vanderbilt/profile.md,source:the-first-tycoon,medium,candidate
