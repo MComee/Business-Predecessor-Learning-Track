@@ -2,7 +2,7 @@
 
 A public, history-driven learning repository for studying business, leadership, capital, and decision making through real companies, real people, real incentives, real failures, and real outcomes.
 
-This repository is intended to become a structured library of historical business knowledge. It is not a generic business-school note collection, motivational quote archive, or theory-first curriculum.
+This repository is intended to become a structured historical business-learning knowledge system. It is not a generic business-school note collection, motivational quote archive, hero-worship project, villain-making project, or theory-first curriculum.
 
 Theory is allowed when it helps explain history. History is not used merely to decorate theory.
 
@@ -23,7 +23,8 @@ The goal is to understand:
 - how decline happened;
 - what warning signs appeared;
 - what lessons are worth copying;
-- and what mistakes should be avoided.
+- what mistakes should be avoided;
+- and which lessons become recurring patterns or durable principles after comparison across targets.
 
 The repository is built around historical targets, such as:
 
@@ -39,7 +40,7 @@ The repository is built around historical targets, such as:
 - crises;
 - or comparison studies.
 
-Examples of possible targets include McDonald's, NVIDIA, Starbucks, Walmart, Apple, Amazon, Toyota, Berkshire Hathaway, Kodak, Blockbuster, Ray Kroc, Sam Walton, Howard Schultz, Warren Buffett, or other historically important organizations and people.
+Examples of possible targets include Cornelius Vanderbilt, John D. Rockefeller, Andrew Carnegie, J. P. Morgan, McDonald's, NVIDIA, Starbucks, Walmart, Apple, Amazon, Toyota, Berkshire Hathaway, Kodak, Blockbuster, Ray Kroc, Sam Walton, Howard Schultz, Warren Buffett, or other historically important organizations and people.
 
 A learner does not need to already know which target to study. One purpose of this repository is to help identify strong historical targets that teach useful lessons.
 
@@ -77,6 +78,27 @@ This includes risk, timing, opportunity cost, incentives, assumptions, alternati
 
 ---
 
+## Knowledge-system model
+
+The repository is not only a set of reports. It is a layered knowledge system.
+
+```text
+Sources -> Facts -> Claims -> Lessons -> Patterns -> Principles
+```
+
+| Level | Meaning | Example |
+|---|---|---|
+| Sources | Evidence artifacts | A biography, filing, court record, interview, report, or archival document |
+| Facts | Directly supported statements | Vanderbilt died in 1877 |
+| Claims | Interpretations of facts | Vanderbilt's advantage appears partly tied to infrastructure control |
+| Lessons | Teachable takeaways | Study bottlenecks because they may reveal where business power concentrates |
+| Patterns | Repeated lessons across targets | Infrastructure control appears across several major business builders |
+| Principles | Durable abstractions supported by multiple strong patterns | Control over movement, access, or distribution can create durable advantage when paired with discipline and capital control |
+
+Knowledge is promoted upward only when evidence supports it.
+
+---
+
 ## How to use this repository
 
 A human learner can use this repository in several ways.
@@ -85,20 +107,29 @@ A human learner can use this repository in several ways.
 
 Open the target's directory and read:
 
-1. `overview.md` or `profile.md`
-2. the Four Pillar files
-3. `lessons-to-copy.md`
-4. `lessons-to-avoid.md`
-5. `sources.md`
+1. `INDEX.md`
+2. `target.yaml` when present
+3. `profile.md`
+4. `timeline.md`
+5. `historical-context.md`
+6. the Four Pillar reports and subdirectories
+7. `lessons/`
+8. `sources/`
 
 ### Option 2: Ask an LLM to align to the repository
 
 Start by directing the LLM to read:
 
 ```text
-LLM_ALIGNMENT.md
 README.md
+LLM_ALIGNMENT.md
 INDEX.md
+specifications/INDEX.md
+specifications/repository-specification.md
+specifications/metadata-specification.md
+specifications/controlled-vocabulary.md
+specifications/index-schema.md
+specifications/knowledge-system-specification.md
 ```
 
 Then ask it to follow the repository rules.
@@ -106,7 +137,7 @@ Then ask it to follow the repository rules.
 Useful prompts:
 
 ```text
-Align yourself to this repository using LLM_ALIGNMENT.md, then ask whether I want to analyze existing knowledge, continue a target, compare targets, discover a target, or create a new target.
+Align yourself to this repository using LLM_ALIGNMENT.md and the specifications, then ask whether I want to analyze existing knowledge, continue a target, compare targets, discover a target, or create a new target.
 ```
 
 ```text
@@ -114,11 +145,11 @@ Recommend five historical business targets we have not studied yet. Explain whic
 ```
 
 ```text
-Create a source-grounded historical profile for McDonald's using the Four Pillars and save it according to the repository structure.
+Create a source-grounded historical profile for McDonald's using the Four Pillars, metadata, source tracking, and indexes required by the repository specifications.
 ```
 
 ```text
-Compare lessons from McDonald's and Starbucks. Separate business, leadership, capital, and decision-making lessons.
+Compare lessons from Vanderbilt, Rockefeller, and Carnegie. Separate facts, claims, lessons, candidate patterns, and possible principles.
 ```
 
 ### Option 3: Discover a new target
@@ -135,9 +166,9 @@ The repository should prefer targets that fill educational gaps, such as:
 - small-company or founder-led cases when sources allow;
 - turnarounds, collapses, and recoveries.
 
-### Option 4: Build cross-target lessons
+### Option 4: Build cross-target knowledge
 
-After multiple targets are studied, use the synthesis files to identify patterns across companies and people.
+After multiple targets are studied, use the indexes and synthesis files to identify patterns across companies and people.
 
 Examples:
 
@@ -147,19 +178,20 @@ Examples:
 - leadership failure patterns;
 - decision-making errors;
 - operational excellence patterns;
-- differences between companies that declined and companies that stayed dominant.
+- differences between companies that declined and companies that stayed dominant;
+- candidate principles supported by repeated patterns.
 
 ---
 
 ## Repository structure
 
-The repository is organized as a navigable file tree.
+The repository is organized as a navigable file tree plus machine-readable indexes.
 
 Each directory should contain its own local `INDEX.md` file.
 
 A local `INDEX.md` only describes the files and subdirectories directly inside that directory. It does not recursively list the entire repository.
 
-Recommended structure:
+Current top-level structure:
 
 ```text
 /
@@ -167,55 +199,73 @@ Recommended structure:
   LLM_ALIGNMENT.md
   INDEX.md
 
+  specifications/
+    INDEX.md
+    repository-specification.md
+    metadata-specification.md
+    controlled-vocabulary.md
+    index-schema.md
+    knowledge-system-specification.md
+
+  indexes/
+    INDEX.md
+    targets.csv
+    reports.csv
+    sources.csv
+    facts.csv
+    claims.csv
+    lessons.csv
+    patterns.csv
+    principles.csv
+    relationships.csv
+    themes.csv
+
   targets/
     INDEX.md
-
     companies/
-      INDEX.md
-      example-company/
-        INDEX.md
-        overview.md
-        business-and-organization.md
-        leadership-and-human-systems.md
-        capital-and-wealth.md
-        decision-making-and-judgment.md
-        lessons-to-copy.md
-        lessons-to-avoid.md
-        sources.md
-
     people/
-      INDEX.md
-      example-person/
-        INDEX.md
-        profile.md
-        companies.md
-        leadership-and-human-systems.md
-        capital-and-wealth.md
-        decision-making-and-judgment.md
-        lessons-to-copy.md
-        lessons-to-avoid.md
-        sources.md
-
     comparison-studies/
-      INDEX.md
-
     failure-cases/
-      INDEX.md
+
+  concepts/
+    INDEX.md
+    business/
+    leadership/
+    capital/
+    decision-making/
+
+  knowledge/
+    INDEX.md
+    facts/
+    claims/
+    lessons/
+    patterns/
+    principles/
 
   synthesis/
     INDEX.md
-    recurring-patterns.md
-    cross-company-lessons.md
-    failure-patterns.md
+
+  templates/
+    INDEX.md
 ```
 
-This structure may expand, but names should remain clear, stable, and readable by both humans and LLMs.
+---
+
+## Specifications
+
+The specifications are governing documents.
+
+- `specifications/repository-specification.md` — structure, navigation, target layout, expansion, and integrity rules.
+- `specifications/metadata-specification.md` — YAML metadata requirements for reports, targets, sources, and knowledge objects.
+- `specifications/controlled-vocabulary.md` — approved terms for themes and concepts.
+- `specifications/index-schema.md` — CSV schemas for repository-wide indexes.
+- `specifications/knowledge-system-specification.md` — rules for sources, facts, claims, lessons, patterns, and principles.
 
 ---
 
 ## Indexing rules
 
-Indexes are part of the repository's navigation system.
+Indexes are part of the repository's navigation and comparison system.
 
 Every directory should contain:
 
@@ -229,9 +279,11 @@ Each local index should list only:
 - subdirectories directly inside that directory;
 - short descriptions of what each item is for.
 
+Repository-wide CSV indexes live in `indexes/` and make cross-target comparison possible.
+
 Whenever a file or directory is created, renamed, moved, or deleted, the affected local indexes should be updated immediately.
 
-The root index should not try to describe every file in the repository. It should only describe what is visible at the root.
+Whenever a target, report, source, fact, claim, lesson, pattern, principle, relationship, or theme is formalized, the relevant CSV index should be updated.
 
 ---
 
@@ -281,6 +333,6 @@ It is intended to study people, organizations, systems, incentives, decisions, o
 
 When learning happens, preserve it.
 
-When a target is selected, expanded, compared, corrected, or synthesized, the repository should be updated in the proper location, with sources and local indexes maintained.
+When a target is selected, expanded, compared, corrected, or synthesized, the repository should be updated in the proper location, with sources, metadata, controlled vocabulary, local indexes, and CSV indexes maintained.
 
 The repository should become more useful over time instead of repeatedly rediscovering the same information.
