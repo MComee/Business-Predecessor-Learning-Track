@@ -1,0 +1,3 @@
+claim_id,statement,related_target,related_report,supporting_fact_ids,source_ids,confidence,status
+claim:vanderbilt:infrastructure-control-advantage,Vanderbilt's career appears to show infrastructure and route control as a major source of advantage.,target:person:cornelius-vanderbilt,report:person:cornelius-vanderbilt:profile,,source:the-first-tycoon,medium,candidate
+claim:vanderbilt:operator-to-owner-path,Vanderbilt's early operating knowledge appears to have contributed to his later movement from operator to owner and controller of transportation systems.,target:person:cornelius-vanderbilt,report:person:cornelius-vanderbilt:profile,,source:the-first-tycoon,medium,candidate
