@@ -1,0 +1,3 @@
+fact_id,statement,related_target,related_report,source_ids,confidence,status
+fact:cornelius-vanderbilt:birth-1794,Cornelius Vanderbilt was born in 1794.,target:person:cornelius-vanderbilt,report:person:cornelius-vanderbilt:profile,source:the-first-tycoon,medium,candidate
+fact:cornelius-vanderbilt:death-1877,Cornelius Vanderbilt died in 1877.,target:person:cornelius-vanderbilt,report:person:cornelius-vanderbilt:profile,source:the-first-tycoon,medium,candidate
