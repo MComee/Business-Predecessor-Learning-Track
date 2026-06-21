@@ -1,0 +1,4 @@
+source_id,title,author_or_creator,publisher_or_holder,publication_date,source_tier,source_type,related_targets,path,reliability_status
+source:the-first-tycoon,The First Tycoon: The Epic Life of Cornelius Vanderbilt,T. J. Stiles,Alfred A. Knopf,2009,5,book,target:person:cornelius-vanderbilt,targets/people/cornelius-vanderbilt/sources/tier-5-books-and-biographies.md,high-priority-secondary
+source:vanderbilt-rise-and-fall,Vanderbilt: The Rise and Fall of an American Dynasty,Anderson Cooper and Katherine Howe,Harper,2021,5,book,target:person:cornelius-vanderbilt,targets/people/cornelius-vanderbilt/sources/tier-5-books-and-biographies.md,supporting-secondary
+source:new-yorker-first-tycoon-review,The New Yorker review of The First Tycoon,The New Yorker,The New Yorker,2009,3,review,target:person:cornelius-vanderbilt,targets/people/cornelius-vanderbilt/sources/tier-3-journalism.md,supporting-interpretive
