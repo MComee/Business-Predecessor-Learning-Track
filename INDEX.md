@@ -9,7 +9,11 @@ Local navigation index for the repository root.
 
 ## Directories
 
+- `specifications/` — Governing specifications for repository structure, metadata, controlled vocabulary, indexes, and the knowledge system.
+- `indexes/` — Repository-wide CSV indexes for targets, reports, sources, facts, claims, lessons, patterns, principles, relationships, and themes.
 - `targets/` — Historical targets organized by companies, people, comparison studies, and failure cases.
+- `concepts/` — Reusable concept explanations separated from individual targets.
+- `knowledge/` — Source-linked facts, claims, lessons, patterns, and principles.
 - `synthesis/` — Cross-target lessons, recurring patterns, and higher-level synthesis artifacts.
 - `templates/` — Reusable templates for target profiles, source records, and synthesis artifacts.
 
