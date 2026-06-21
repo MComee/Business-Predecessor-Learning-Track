@@ -2,7 +2,9 @@
 
 This document defines the alignment target for any capable LLM assisting with this repository.
 
-This repository is a public learning project for studying companies, founders, executives, operators, business models, leadership, capital, investing, valuation, decision making, organizational rise, organizational decline, and practical lessons about success and failure.
+This repository is a public, history-driven learning project for studying companies, founders, executives, operators, investors, business models, leadership, capital, investing, valuation, decision making, organizational rise, organizational decline, and practical lessons about success and failure.
+
+The repository is now a layered knowledge system. It stores readable historical reports, structured metadata, controlled vocabulary terms, source-linked knowledge objects, and repository-wide indexes for comparison and synthesis.
 
 ---
 
@@ -12,789 +14,253 @@ The LLM's purpose is to act as a careful business-history, leadership-history, c
 
 The repository exists to help a serious beginner develop toward business competence by studying historically grounded examples of companies, founders, leaders, investors, operators, decisions, successes, failures, recoveries, and downfalls. Theory is allowed when it comes from trusted sources, but historical evidence remains primary.
 
-The repository studies four broad but connected pillars:
+The LLM must preserve the repository's core rule:
+
+> Markdown teaches. Metadata describes. Vocabulary standardizes. Indexes compare. Provenance protects trust.
+
+---
+
+## 2. Core Learning Pillars
+
+Every historical target is studied through four connected pillars:
 
 1. **Business & Organizations** — how organizations are conceived, started, funded, built, operated, sold, marketed, scaled, defended, weakened, revived, or destroyed.
 2. **Leadership & Human Systems** — how founders, presidents, executives, operators, managers, and key decision-makers think, act, decide, communicate, endure pressure, build teams, create culture, exercise judgment, fail, recover, or decline.
 3. **Capital & Wealth** — how money, accounting, cash flow, ownership, debt, equity, investing, valuation, capital allocation, fundraising, compounding, wealth creation, and wealth preservation affect businesses and individuals.
 4. **Decision Making & Judgment** — how people and organizations make decisions under uncertainty, manage risk, allocate resources, choose strategy, miss opportunities, make pivots, or fail through poor judgment.
 
-The LLM must help users study the full path from idea to dominance, including:
-
-- how a company began as a concept before it existed as an operating business;
-- how founders, presidents, executives, or early operators moved from idea to action;
-- how they validated, funded, built, launched, sold, operated, and scaled the original business;
-- how the startup process was managed under uncertainty, constraint, risk, competition, and limited resources;
-- how major companies started;
-- where they started;
-- why they became successful;
-- how money was obtained, managed, invested, reinvested, preserved, wasted, or lost;
-- what hard problems they faced;
-- what technical, product, operational, financial, cultural, regulatory, market, legal, ethical, leadership, or decision-making constraints shaped them;
-- how founders, executives, operators, investors, teams, and organizations handled those constraints;
-- what traits, habits, decisions, disciplines, communication patterns, judgment patterns, financial behaviors, capital-allocation decisions, and leadership behaviors contributed to success;
-- how leaders recruited, delegated, taught, enforced standards, handled conflict, built trust, corrected failure, and made hard decisions;
-- what mistakes, blind spots, ethical failures, strategic errors, capital errors, investment errors, operational weaknesses, leadership failures, succession failures, cultural failures, decision failures, or market shifts contributed to decline;
-- how defunct, weakened, or declining companies fell;
-- what warning signs appeared before decline;
-- what might reasonably have prevented, slowed, or reversed the decline;
-- what a learner should copy;
-- what a learner should avoid;
-- and what practical lessons can be extracted without exaggeration, myth-making, hero worship, character assassination, financial hype, or unsupported motivational claims.
-
-The LLM must teach at six connected levels:
-
-1. **Individual level** — founders, leaders, builders, operators, investors, and key decision-makers.
-2. **Startup-to-leadership level** — how a person moved from idea, uncertainty, and early execution into leadership of a real organization.
-3. **Organizational level** — how a company moved from concept to startup, from startup to operating business, from operating business to growth, and from growth to category strength, category leadership, or category dominance.
-4. **Leadership-system level** — how leadership practices shaped culture, execution, resilience, succession, accountability, incentives, and the organization's ability to survive beyond one person.
-5. **Capital-system level** — how money, ownership, accounting, finance, investing, valuation, debt, equity, and capital allocation shaped growth, fragility, wealth creation, or collapse.
-6. **Decision-system level** — how judgment, risk evaluation, timing, information quality, incentives, and decision processes shaped outcomes.
-
-The LLM must not treat success stories as simple formulas. It must separate:
-
-- verified facts;
-- claims made by the company, founder, leader, investor, or participant;
-- outside reporting;
-- financial statements and accounting facts;
-- model-based financial estimates or valuation judgments;
-- later interpretation;
-- disputed accounts;
-- myths or simplified popular narratives;
-- business lessons supported by evidence;
-- leadership lessons supported by evidence;
-- capital lessons supported by evidence;
-- decision-making lessons supported by evidence;
-- lessons inferred from evidence;
-- and the LLM's own inference.
-
-The LLM must produce learning material that is accurate, source-grounded, practical, and clear enough for a serious learner to reuse.
+The LLM must not treat success stories as simple formulas. It must separate verified facts, participant claims, outside reporting, interpretation, disputed accounts, myths, model-based financial judgments, source-supported lessons, inferred lessons, and its own inference.
 
 ---
 
-## 2. Process
+## 3. Required Alignment Reading Order
+
+Before doing repository work, the LLM should read or consult these files when available:
+
+1. `README.md`
+2. `LLM_ALIGNMENT.md`
+3. `INDEX.md`
+4. `specifications/INDEX.md`
+5. `specifications/repository-specification.md`
+6. `specifications/metadata-specification.md`
+7. `specifications/controlled-vocabulary.md`
+8. `specifications/index-schema.md`
+9. `specifications/knowledge-system-specification.md`
+10. Relevant local `INDEX.md` files for the target or directory being modified
+11. Relevant CSV files in `indexes/` when creating or formalizing targets, reports, sources, facts, claims, lessons, patterns, principles, relationships, or themes
+
+If a required file is unavailable, the LLM must say what is unavailable and proceed conservatively.
+
+---
+
+## 4. Evidence Process
 
 The LLM must use a tiered evidence process before saving or recommending repository content.
 
-### 2.1 Source authority tiers
-
-The LLM must classify sources by evidence tier. These tiers apply to business analysis, leadership analysis, capital analysis, and decision-making analysis.
+### 4.1 Source authority tiers
 
 #### Tier 1 — Primary records
 
-Examples:
+Examples: SEC filings, annual reports, shareholder letters, audited financial statements, earnings releases, court records, bankruptcy filings, patents, regulatory records, archived company documents, board materials when public, original operating manuals, original advertisements, memos, letters, speeches, policies, internal documents when authenticated, direct interviews, recorded speeches, testimony, or public remarks by direct participants.
 
-- SEC filings;
-- annual reports;
-- shareholder letters;
-- audited financial statements;
-- earnings releases and earnings-call transcripts;
-- investor presentations;
-- prospectuses;
-- court records;
-- bankruptcy filings;
-- patents;
-- regulatory records;
-- archived company documents;
-- board materials when public;
-- original operating manuals;
-- original advertisements, memos, letters, speeches, policies, or internal documents when authenticated;
-- direct interviews;
-- recorded speeches, testimony, or public remarks by founders, executives, employees, regulators, investors, creditors, or other direct participants.
-
-Use Tier 1 sources for:
-
-- dates;
-- financial facts;
-- public-company disclosures;
-- accounting statements;
-- cash flow, debt, equity, ownership, and risk disclosures;
-- litigation or regulatory facts;
-- leadership statements;
-- product launches;
-- stated risks;
-- stated strategy;
-- ownership and corporate structure;
-- documented decisions;
-- leadership communication;
-- public commitments;
-- operating rules, standards, or processes.
-
-Tier 1 sources are highest priority for factual claims, but they may still contain self-protective framing, legal framing, accounting assumptions, omissions, selective emphasis, public-relations framing, or retrospective justification.
+Use Tier 1 sources for dates, financial facts, public-company disclosures, legal or regulatory facts, documented decisions, ownership structure, corporate structure, leadership statements, public commitments, operating rules, and primary evidence.
 
 #### Tier 2 — Company, founder, leader, and investor self-narratives
 
-Examples:
+Examples: founder memoirs, executive autobiographies, investor letters, authorized histories, official company books, official documentaries, oral histories, anniversary publications, leadership letters, essays, talks, podcasts, interviews, and published management philosophies by direct participants.
 
-- founder memoirs;
-- executive autobiographies;
-- investor letters;
-- authorized company histories;
-- official company books;
-- company documentaries;
-- official oral histories;
-- official anniversary publications;
-- leadership letters, essays, talks, podcasts, interviews, and published management philosophies by direct participants.
-
-Use Tier 2 sources for:
-
-- what founders, executives, or investors say they believed;
-- how insiders explain decisions;
-- internal culture as remembered by participants;
-- stated motivations;
-- leadership self-understanding;
-- origin stories;
-- management philosophy;
-- capital-allocation philosophy;
-- investment philosophy;
-- personal habits and disciplines as described by the person or organization;
-- claimed lessons learned.
-
-Tier 2 sources are valuable but must be labeled as self-narrative, authorized perspective, or participant perspective. They must not be treated as neutral proof when describing blame, motives, competitors, employees, customers, regulators, investors, disputed events, financial wisdom, or the leader's own virtue.
+Use Tier 2 sources for what participants say they believed, how insiders explain decisions, internal culture as remembered by participants, motivations, origin stories, management philosophy, capital-allocation philosophy, investment philosophy, and claimed lessons learned. Label them as participant perspective, not neutral proof.
 
 #### Tier 3 — Serious business, finance, and leadership journalism
 
-Examples:
+Examples: Reuters, Associated Press, Bloomberg, Wall Street Journal, Financial Times, Fortune, Forbes, Businessweek, New York Times business reporting, CNBC or similar established business-news outlets when sourced and factual, and serious long-form leadership or company profiles.
 
-- Reuters;
-- Associated Press;
-- Bloomberg;
-- Wall Street Journal;
-- Financial Times;
-- Fortune;
-- Forbes;
-- Businessweek;
-- New York Times business reporting;
-- CNBC or other established business-news outlets when reporting is sourced and factual;
-- serious long-form leadership, finance, or company profiles from reputable publications.
-
-Use Tier 3 sources for:
-
-- contemporary reporting;
-- interviews;
-- market context;
-- industry reaction;
-- major events;
-- leadership changes;
-- financing events;
-- mergers, acquisitions, bankruptcies, or restructurings;
-- valuation narratives;
-- succession issues;
-- cultural problems;
-- executive behavior as observed by others;
-- competitive pressure;
-- crisis reporting;
-- external perspectives.
-
-Tier 3 sources are trusted when they identify sources, provide evidence, distinguish reporting from opinion, and can be cross-checked.
+Use Tier 3 sources for contemporary reporting, interviews, market context, industry reaction, leadership changes, financing events, M&A, bankruptcies, restructurings, valuation narratives, succession issues, cultural problems, executive behavior observed by others, competitive pressure, and crisis reporting.
 
 #### Tier 4 — Academic, business-school, finance, and leadership research sources
 
-Examples:
+Examples: business-school case studies, peer-reviewed business-history research, academic books from university presses, Harvard Business Review-style analysis, management, strategy, operations, finance, accounting, marketing, organizational-behavior research, leadership studies, organizational psychology, crisis-management research, decision-making research, entrepreneurship research, investment research, valuation research, corporate-finance research, and capital-allocation research.
 
-- business-school case studies;
-- peer-reviewed business-history research;
-- academic books from university presses;
-- Harvard Business Review-style analysis;
-- management, strategy, operations, finance, accounting, marketing, and organizational-behavior research;
-- leadership studies;
-- organizational psychology;
-- crisis-management research;
-- decision-making research;
-- entrepreneurship research;
-- investment, valuation, corporate-finance, and capital-allocation research.
-
-Use Tier 4 sources for:
-
-- frameworks;
-- retrospective interpretation;
-- strategic analysis;
-- operational analysis;
-- leadership analysis;
-- financial theory;
-- valuation theory;
-- accounting interpretation;
-- investment theory;
-- organizational behavior;
-- founder psychology when evidence-based;
-- decision-making under uncertainty;
-- risk management;
-- incentives and agency problems;
-- team dynamics;
-- culture, incentives, delegation, execution, accountability, and succession;
-- teaching structure.
-
-Tier 4 sources are strong for interpretation and theory, but historical claims should still be checked against primary records or high-quality reporting when possible.
+Use Tier 4 sources for frameworks, retrospective interpretation, strategic analysis, operational analysis, leadership analysis, financial theory, valuation theory, accounting interpretation, investment theory, organizational behavior, decision-making under uncertainty, risk management, incentives, agency problems, team dynamics, culture, accountability, succession, and teaching structure.
 
 #### Tier 5 — Well-sourced secondary books and biographies
 
-Examples:
+Examples: reputable biographies, leadership biographies, investor biographies, investigative books, business histories, financial histories, industry histories, and books from established publishers with notes, citations, interviews, and archival work.
 
-- reputable biographies;
-- leadership biographies;
-- investor biographies;
-- investigative books;
-- business histories;
-- financial histories;
-- industry histories;
-- books from established publishers with notes, citations, interviews, and archival work.
-
-Use Tier 5 sources for:
-
-- narrative synthesis;
-- long-form context;
-- founder psychology;
-- leadership development;
-- investor psychology;
-- capital-allocation history;
-- company culture;
-- behind-the-scenes events;
-- interpersonal conflict;
-- succession conflict;
-- financial turning points;
-- cause-and-effect hypotheses;
-- rise-and-fall narratives.
-
-Tier 5 sources are useful when well-documented. They must be checked against primary records, interviews, and serious reporting when the claim is important.
+Use Tier 5 sources for narrative synthesis, long-form context, founder psychology, leadership development, investor psychology, capital-allocation history, company culture, behind-the-scenes events, interpersonal conflict, succession conflict, financial turning points, cause-and-effect hypotheses, and rise-and-fall narratives.
 
 #### Tier 6 — Weak or supporting-only sources
 
-Examples:
+Examples: blogs, social media, unsourced articles, short-form video essays, podcasts without citations, listicles, AI-generated summaries, forum posts, promotional material, motivational content, leadership quote collections, personality myth content, get-rich-quick content, and unsourced investing advice.
 
-- blogs;
-- social media;
-- unsourced articles;
-- short-form video essays;
-- podcasts without citations;
-- listicles;
-- AI-generated summaries;
-- forum posts;
-- promotional material;
-- motivational content;
-- leadership quote collections;
-- personality myth content;
-- get-rich-quick content;
-- unsourced investing advice;
-- financial influencer content without primary support.
+Use Tier 6 only for discovering leads, finding names or events to verify elsewhere, identifying popular interpretations that may need correction, finding repeated myths, or recording clearly labeled opinion.
 
-Use Tier 6 sources only for:
+### 4.2 Evidence-gathering order
 
-- discovering leads;
-- finding names, dates, or events to verify elsewhere;
-- identifying popular interpretations that may need correction;
-- finding commonly repeated business, leadership, finance, or investing myths;
-- opinion clearly labeled as opinion.
-
-Tier 6 sources must not be used as the sole basis for repository claims unless the claim is explicitly about that source's opinion or public perception.
-
-### 2.2 Evidence-gathering order
-
-For each company, founder, leader, investor, decision, financial event, or business event, the LLM must proceed in this order:
+For each company, founder, leader, investor, decision, financial event, or business event, the LLM must:
 
 1. Define the exact research target.
 2. Identify the company, person, time period, industry, geography, and central question.
-3. Determine whether the question is primarily about business, leadership, capital, decision making, or a combination.
+3. Determine whether the question is about business, leadership, capital, decision making, or a combination.
 4. Search Tier 1 sources first when available.
-5. Search Tier 2 sources for insider claims, self-narrative, founder intent, leadership philosophy, capital-allocation philosophy, and investment philosophy.
-6. Search Tier 3 sources for external reporting and contemporary context.
-7. Search Tier 4 sources for teaching frameworks, leadership analysis, finance theory, valuation theory, decision-making theory, and retrospective analysis.
-8. Search Tier 5 sources for deeper narrative context.
-9. Use Tier 6 only for leads, public perception, or clearly labeled opinion.
+5. Search Tier 2 for participant perspective.
+6. Search Tier 3 for external reporting and context.
+7. Search Tier 4 for frameworks and research.
+8. Search Tier 5 for narrative depth.
+9. Use Tier 6 only for leads or public perception.
 10. Cross-check important claims across at least two independent source types when possible.
 11. Mark unsupported, disputed, model-based, or single-source claims clearly.
 12. Separate fact from interpretation before extracting lessons.
-13. Separate business lessons, leadership lessons, capital lessons, and decision-making lessons unless the evidence clearly connects them.
-14. Save only material that is source-grounded, clearly structured, and useful for learning.
+13. Save only material that is source-grounded, clearly structured, and useful for learning.
 
-### 2.3 Priority rules
+---
 
-The LLM must prioritize evidence as follows:
+## 5. Knowledge-System Model
 
-- For financial, accounting, legal, regulatory, and public-company facts, prefer Tier 1.
-- For founder intent or personal recollection, use Tier 2, but label it as the person's or company's account.
-- For observed leadership behavior, prefer Tier 1 direct evidence when available, then Tier 3 reporting, then well-sourced Tier 5 biographies.
-- For leadership philosophy, use Tier 2, but distinguish stated philosophy from actual behavior.
-- For capital-allocation or investing philosophy, use Tier 2, but distinguish stated philosophy from actual investment or business outcomes.
-- For what employees, competitors, customers, regulators, creditors, investors, or outsiders observed at the time, prefer Tier 3 and relevant Tier 1 records.
-- For finance, accounting, investing, valuation, decision-making, and strategy frameworks, use Tier 4.
-- For narrative depth, use Tier 5.
-- For leads, public perception, quotes, popular leadership myths, or investing myths, use Tier 6 only with caution.
+The repository separates knowledge into levels:
 
-When sources conflict:
+1. **Sources** — evidence artifacts.
+2. **Facts** — directly supported statements.
+3. **Claims** — interpretations of facts.
+4. **Lessons** — teachable takeaways from claims.
+5. **Patterns** — repeated lessons across targets.
+6. **Principles** — durable abstractions supported by multiple strong patterns.
 
-1. Prefer primary records for objective facts.
-2. Prefer audited or legally filed financial records for financial facts when available.
-3. Prefer contemporaneous reporting over much-later memory when reconstructing events.
-4. Prefer multiple independent accounts over a single interested account.
-5. Preserve disagreement instead of forcing false certainty.
-6. State what is known, what is disputed, what is inferred, what is model-based, and what remains unknown.
-7. Do not turn leadership reputation into evidence by itself; reputation must be supported by decisions, actions, outcomes, and corroborated accounts.
-8. Do not treat valuation as certainty; valuation is model-based judgment dependent on assumptions, timing, market conditions, and available evidence.
+The LLM must maintain the provenance chain:
 
-### 2.4 Required extraction categories
+```text
+source -> fact -> claim -> lesson -> pattern -> principle
+```
 
-The LLM must gather and organize information under these categories when relevant.
+If the chain is incomplete, the knowledge object must remain candidate, developing, or low-confidence.
 
-#### Business & organization categories
+### 5.1 Promotion rules
 
-- original idea or concept;
-- founder or leader background before the company existed;
-- first actions taken to turn the idea into a business;
-- startup constraints and early risks;
-- early funding, ownership, partners, and tradeoffs;
-- first product or service;
-- first customers;
-- early sales and distribution;
-- early operational system;
-- origin story;
-- key product or service insight;
-- business model;
-- customer problem solved;
-- market timing;
-- competition;
-- sales motion;
-- marketing channel;
-- distribution channel;
-- pricing;
-- brand trust;
-- operational breakthroughs;
-- repeatable process;
-- quality control;
-- logistics;
-- hiring and training systems;
-- bottlenecks;
-- technical or product problems;
-- culture;
-- crisis moments;
-- turning points;
-- scaling decisions;
-- category dominance or peak position;
-- decline signals;
-- downfall causes;
-- preventable mistakes;
-- alternative decisions that may have changed the outcome;
-- lessons to copy;
-- lessons to avoid;
-- open questions requiring more evidence.
+- A fact requires source support.
+- A claim requires supporting facts and source provenance.
+- A lesson requires at least one supported claim and a transferability assessment.
+- A candidate pattern may appear after two targets.
+- An accepted pattern normally requires at least three targets.
+- A strong pattern normally requires at least five targets across multiple industries, eras, or contexts.
+- An accepted principle requires at least three strong patterns and at least one considered counterexample.
 
-#### Leadership & human-systems categories
+### 5.2 Transferability labels
 
-- leader background before authority;
-- formation of ambition, discipline, skill, judgment, or worldview;
-- first leadership opportunity;
-- how the leader earned, assumed, bought, inherited, or created authority;
-- decision-making style;
-- communication style;
-- standards and expectations;
-- work ethic and personal operating rhythm;
-- ability to recruit, select, train, retain, promote, or remove people;
-- delegation and control balance;
-- relationship with cofounders, partners, investors, employees, customers, regulators, creditors, and competitors;
-- response to uncertainty;
-- response to failure;
-- response to success;
-- response to crisis;
-- response to criticism;
-- ethical boundaries;
-- ego, humility, arrogance, or self-correction when evidence supports analysis;
-- culture created by the leader;
-- systems created by the leader;
-- incentives created by the leader;
-- succession planning or failure;
-- leadership strengths to copy;
-- leadership failures to avoid;
-- leadership lessons supported by evidence;
-- leadership myths or oversimplifications requiring correction;
-- open questions requiring more evidence.
+Lessons should be labeled as:
 
-#### Capital & wealth categories
+- `still-valid`
+- `context-dependent`
+- `obsolete`
+- `illegal-or-unethical-today`
+- `unknown`
 
-- basic accounting facts;
-- revenue;
-- expenses;
-- gross profit;
-- operating profit;
-- net income;
-- gross margin;
-- operating margin;
-- cash flow;
-- free cash flow when available;
-- working capital;
-- liquidity;
-- burn rate;
-- debt;
-- equity;
-- ownership structure;
-- founder equity;
-- investor incentives;
-- fundraising history;
-- dilution;
-- reinvestment;
-- capital allocation;
-- asset allocation;
-- compounding;
-- risk and reward;
-- pricing power;
-- unit economics;
-- valuation history;
-- valuation assumptions;
-- comparable companies;
-- business multiples;
-- acquisitions;
-- mergers;
-- divestitures;
-- bankruptcy indicators;
-- solvency warning signs;
-- wealth creation mechanisms;
-- wealth loss mechanisms;
-- wealth preservation mechanisms;
-- capital lessons to copy;
-- capital lessons to avoid;
-- open questions requiring more evidence.
+---
 
-#### Decision making & judgment categories
+## 6. Metadata, Vocabulary, and Index Requirements
 
-- decision context;
-- available information at the time;
-- uncertainty level;
-- risk profile;
-- opportunity cost;
-- incentives affecting the decision;
-- decision-maker assumptions;
-- alternatives considered;
-- alternatives ignored;
-- timing;
-- strategic pivot;
-- refusal to pivot;
-- resource-allocation decision;
-- capital-allocation decision;
-- hiring or firing decision;
-- product decision;
-- market-entry decision;
-- crisis decision;
-- probabilistic thinking;
-- overconfidence;
-- denial of evidence;
-- information ignored;
-- feedback loops;
-- decision outcome;
-- what was knowable at the time;
-- what was only obvious in hindsight;
-- decision lessons to copy;
-- decision failures to avoid;
-- open questions requiring more evidence.
+### 6.1 Metadata
 
-### 2.5 Four-pillar synthesis
+Reports, targets, sources, and knowledge objects should include metadata according to `specifications/metadata-specification.md`.
 
-The LLM must synthesize business, leadership, capital, and decision making together only after gathering evidence for the relevant pillars.
+Reports should begin with YAML front matter unless explicitly exempted.
 
-The synthesis must answer:
+### 6.2 Controlled vocabulary
 
-- What business problem was being solved?
-- What leadership problem had to be solved for the business to survive?
-- What capital problem had to be solved for the business to survive or grow?
-- What decision problem had to be solved under uncertainty?
-- What did the leader personally contribute?
-- What did the organization contribute beyond the leader?
-- How did the organization obtain capital?
-- How did it deploy capital?
-- What capital decisions accelerated growth?
-- What capital decisions damaged the organization?
-- How was wealth created?
-- How was wealth lost?
-- What ownership structures helped?
-- What ownership structures harmed?
-- What systems made the success repeatable?
-- What depended too heavily on one person?
-- What decision-making frameworks appeared to work?
-- What decision-making failures contributed to decline?
-- What traits or decisions helped during the startup stage?
-- What traits or decisions helped during the scaling stage?
-- What traits or decisions became liabilities later?
-- What organizational weaknesses did leadership create, ignore, or fail to repair?
-- Which lessons are broadly reusable?
-- Which lessons were context-specific and should not be copied blindly?
+The LLM must prefer existing controlled vocabulary terms in `specifications/controlled-vocabulary.md` and `indexes/themes.csv` before creating new terms.
 
-### 2.6 Output discipline
+If a new term is needed, the LLM should:
+
+1. Check whether an existing term or alias already covers the idea.
+2. Add the new term as `candidate` if uncertain.
+3. Update `controlled-vocabulary.md` and `indexes/themes.csv` if the term is formalized.
+
+### 6.3 CSV indexes
+
+The LLM must update the relevant CSV indexes in `indexes/` when formalizing repository objects:
+
+- `targets.csv`
+- `reports.csv`
+- `sources.csv`
+- `facts.csv`
+- `claims.csv`
+- `lessons.csv`
+- `patterns.csv`
+- `principles.csv`
+- `relationships.csv`
+- `themes.csv`
+
+Do not index every sentence. Index reusable, comparable, or important knowledge.
+
+---
+
+## 7. Target Workflow
+
+After alignment, the LLM must determine whether the user wishes to:
+
+- analyze existing repository knowledge;
+- continue an existing target;
+- compare multiple targets;
+- create a new target;
+- discover a new target for study;
+- or formalize repository structure/specifications.
+
+If the user does not know what target to study, recommendations should prioritize educational value across the Four Pillars and fill coverage gaps.
+
+Potential targets include companies, founders, leaders, investors, operators, failures, turnarounds, acquisitions, crises, industries, and business events.
+
+Each recommendation should explain:
+
+- why the target matters;
+- which pillars it strengthens;
+- what unique lessons it offers;
+- what coverage gap it fills.
+
+---
+
+## 8. Repository Structure and Indexing Rules
+
+The repository must remain navigable for humans and LLMs.
+
+Every directory must contain `INDEX.md`.
+
+A local `INDEX.md` must describe only:
+
+- files directly inside that directory;
+- subdirectories directly inside that directory.
+
+It must not recursively enumerate the whole repository.
+
+Names must be lowercase, hyphenated, descriptive, stable, human-readable, and LLM-readable.
+
+Whenever a file or directory is created, renamed, moved, or deleted, all affected local indexes must be updated immediately.
+
+When repository-wide objects are formalized, the relevant CSV indexes must be updated.
+
+---
+
+## 9. Output Discipline
 
 Before content is saved to this repository, the LLM must verify that it is:
 
 - public-facing;
 - unrelated to any private project;
 - supported by sources or clearly labeled as interpretation;
-- organized by source tier;
+- organized by source tier where relevant;
 - clear about uncertainty;
-- separated into business analysis, leadership analysis, capital analysis, decision-making analysis, and synthesis when useful;
+- separated into facts, claims, lessons, patterns, and principles when useful;
+- separated into business, leadership, capital, decision-making, and synthesis when useful;
 - explicit when financial or valuation conclusions are model-based;
+- metadata-compliant when applicable;
+- vocabulary-aware when applicable;
+- indexed locally and globally when applicable;
 - useful for learning;
-- concise enough to navigate;
-- and modular enough to expand later.
+- modular enough to expand later.
 
 The LLM must not save private context, private project references, private repository references, or unrelated personal strategy into this public repository.
 
 ---
 
-## 3. Operating Workflow
-
-The repository operates on historical targets. A historical target is the primary unit of study. The Four Pillars are analytical lenses applied to that target.
-
-### 3.1 Target Selection Rule
-
-After alignment, the first responsibility is determining whether the user wishes to:
-
-- analyze existing repository knowledge;
-- continue an existing target;
-- compare multiple targets;
-- create a new target;
-- or discover a new target for study.
-
-If no target exists, or if the user does not know what target to study, the repository enters Target Discovery Mode.
-
-### 3.2 Target Discovery Mode
-
-When a user does not know what target to study, recommendations should be generated.
-
-Recommendations should prioritize educational value across:
-
-- Business & Organizations;
-- Leadership & Human Systems;
-- Capital & Wealth;
-- Decision Making & Judgment.
-
-Potential targets include:
-
-- companies;
-- founders;
-- leaders;
-- investors;
-- operators;
-- failures;
-- turnarounds;
-- acquisitions;
-- crises;
-- industries;
-- business events.
-
-Each recommendation should explain:
-
-- why the target matters;
-- which pillars it strengthens;
-- what unique lessons it offers.
-
-### 3.3 Coverage-Based Recommendation Rule
-
-The repository should continuously identify educational gaps.
-
-Recommendations should strengthen areas with weak coverage.
-
-Examples:
-
-- too many successes -> recommend failures;
-- too many technology companies -> recommend other industries;
-- too much leadership -> recommend capital allocation;
-- too much modern history -> recommend earlier business history;
-- too much American business history -> recommend international targets;
-- too many large public companies -> recommend small-company, private-company, startup, family-business, or founder-led targets when sources allow.
-
-The objective is balanced educational coverage.
-
-### 3.4 Curriculum-Building Rule
-
-Targets should not be treated as isolated studies.
-
-The repository should gradually evolve into a structured learning library.
-
-New targets should ideally contribute:
-
-- new industries;
-- new business models;
-- new leadership approaches;
-- new capital-allocation approaches;
-- new decision-making patterns;
-- new failure patterns;
-- new turnaround patterns.
-
-The repository should seek balance across:
-
-- industries;
-- geographies;
-- eras;
-- company sizes;
-- business models;
-- leadership styles;
-- capital-allocation styles;
-- successes;
-- failures;
-- recoveries.
-
-### 3.5 Continuous Knowledge Capture Rule
-
-Whenever meaningful learning occurs:
-
-- repository artifacts must be updated;
-- sources must be preserved;
-- lessons must remain attached to historical targets;
-- synthesis artifacts may be updated when recurring patterns emerge.
-
-Learning should accumulate rather than be repeatedly rediscovered.
-
----
-
-## 4. Repository Structure & Indexing Rules
-
-The repository must remain navigable for humans and LLMs. It should behave like a clear file tree that can be entered one directory at a time.
-
-### 4.1 Local Index Rule
-
-Every directory must contain:
-
-```text
-INDEX.md
-```
-
-The index must describe only:
-
-- files directly inside that directory;
-- subdirectories directly inside that directory.
-
-Indexes must not recursively enumerate the entire repository.
-
-The root `INDEX.md` must describe only the files and subdirectories directly visible from the repository root.
-
-### 4.2 Navigation Rule
-
-Directory names must be:
-
-- human-readable;
-- LLM-readable;
-- descriptive;
-- stable.
-
-Names should communicate purpose without requiring additional context.
-
-Avoid vague names such as:
-
-```text
-misc/
-temp/
-stuff/
-notes/
-```
-
-Prefer descriptive names such as:
-
-```text
-targets/
-companies/
-people/
-comparison-studies/
-failure-cases/
-synthesis/
-```
-
-### 4.3 File Naming Rule
-
-File names must communicate content and purpose clearly.
-
-Prefer descriptive names over generic names.
-
-Good examples:
-
-```text
-business-and-organization.md
-leadership-and-human-systems.md
-capital-and-wealth.md
-decision-making-and-judgment.md
-lessons-to-copy.md
-lessons-to-avoid.md
-sources.md
-```
-
-Avoid:
-
-```text
-notes.md
-data.md
-misc.md
-research.md
-```
-
-### 4.4 Historical Target Structure
-
-The repository should organize knowledge around historical targets.
-
-The target is the primary organizational unit.
-
-The Four Pillars are analytical lenses applied to the target.
-
-Recommended structure:
-
-```text
-/
-  README.md
-  LLM_ALIGNMENT.md
-  INDEX.md
-
-  targets/
-    INDEX.md
-
-    companies/
-      INDEX.md
-      example-company/
-        INDEX.md
-        overview.md
-        business-and-organization.md
-        leadership-and-human-systems.md
-        capital-and-wealth.md
-        decision-making-and-judgment.md
-        lessons-to-copy.md
-        lessons-to-avoid.md
-        sources.md
-
-    people/
-      INDEX.md
-      example-person/
-        INDEX.md
-        profile.md
-        companies.md
-        leadership-and-human-systems.md
-        capital-and-wealth.md
-        decision-making-and-judgment.md
-        lessons-to-copy.md
-        lessons-to-avoid.md
-        sources.md
-
-    comparison-studies/
-      INDEX.md
-
-    failure-cases/
-      INDEX.md
-
-  synthesis/
-    INDEX.md
-    recurring-patterns.md
-    cross-company-lessons.md
-    failure-patterns.md
-```
-
-This structure is a recommendation, not a permanent limit. New directories may be added when needed, but they must follow the local index, navigation, and file-naming rules.
-
-### 4.5 Index Maintenance Rule
-
-Whenever a file or directory is:
-
-- created;
-- renamed;
-- moved;
-- deleted;
-
-all affected local indexes must be updated immediately.
-
-Repository navigation must remain accurate.
-
-If a file's title or purpose changes, the local index entry should also be updated.
-
-### 4.6 Repository Philosophy
+## 10. Repository Philosophy
 
 The repository is intended to become:
 
@@ -804,28 +270,9 @@ The repository is not intended to become:
 
 > A generic business-school note collection.
 
-The repository prioritizes:
+The repository prioritizes real people, real organizations, real incentives, real decisions, real outcomes, real successes, real failures, and real consequences.
 
-- real people;
-- real organizations;
-- real incentives;
-- real decisions;
-- real outcomes;
-- real successes;
-- real failures;
-- real consequences.
-
-The repository is not intended to create heroes or villains.
-
-It is intended to study:
-
-- people;
-- organizations;
-- systems;
-- incentives;
-- decisions;
-- outcomes;
-- consequences.
+The repository is not intended to create heroes or villains. It is intended to study people, organizations, systems, incentives, decisions, outcomes, and consequences.
 
 Theory exists to explain history.
 
