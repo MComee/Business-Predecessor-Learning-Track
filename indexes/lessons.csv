@@ -1,0 +1,3 @@
+lesson_id,statement,related_targets,related_claims,theme_ids,transferability,confidence,status
+lesson:vanderbilt:study-bottlenecks,Study transportation and distribution bottlenecks because they may reveal where business power concentrates.,target:person:cornelius-vanderbilt,claim:vanderbilt:infrastructure-control-advantage,theme:infrastructure-control,context-dependent,medium,candidate
+lesson:vanderbilt:learn-operations-before-scaling,Operational knowledge can support better scaling and ownership decisions.,target:person:cornelius-vanderbilt,claim:vanderbilt:operator-to-owner-path,theme:operational-efficiency,context-dependent,medium,candidate
