@@ -6,6 +6,7 @@ Local navigation index for the repository root.
 
 - `README.md` — Human-facing explanation of the repository, its purpose, Four Pillars, source standards, and usage workflow.
 - `LLM_ALIGNMENT.md` — Alignment and operating rules for any capable LLM assisting with this repository.
+- `Phase Plan.md` — Step-by-step adoption plan for strengthening the repository into a governed, source-grounded, historically tested business knowledge system.
 
 ## Directories
 
