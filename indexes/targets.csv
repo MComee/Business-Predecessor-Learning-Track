@@ -1,0 +1,2 @@
+target_id,title,target_type,status,primary_path,period_start,period_end,geography,source_status,confidence
+target:person:cornelius-vanderbilt,Cornelius Vanderbilt,person,developing,targets/people/cornelius-vanderbilt/,1794,1877,united-states,developing,medium
