@@ -1,0 +1,4 @@
+report_id,target_id,title,artifact_type,pillar,path,source_status,confidence,updated
+report:person:cornelius-vanderbilt:profile,target:person:cornelius-vanderbilt,Cornelius Vanderbilt Profile,report,cross-pillar,targets/people/cornelius-vanderbilt/profile.md,developing,medium,2026-06-21
+report:person:cornelius-vanderbilt:timeline,target:person:cornelius-vanderbilt,Cornelius Vanderbilt — Timeline,report,cross-pillar,targets/people/cornelius-vanderbilt/timeline.md,developing,medium,2026-06-21
+report:person:cornelius-vanderbilt:historical-context,target:person:cornelius-vanderbilt,Cornelius Vanderbilt — Historical Context,report,cross-pillar,targets/people/cornelius-vanderbilt/historical-context.md,developing,medium,2026-06-21
