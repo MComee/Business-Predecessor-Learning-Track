@@ -8,7 +8,7 @@ None yet.
 
 ## Directories
 
-None yet.
+- `cornelius-vanderbilt/` — Person-centered target for Cornelius Vanderbilt, focused on shipping, railroads, transportation infrastructure, capital accumulation, and early American business dominance.
 
 ## Intended contents
 
