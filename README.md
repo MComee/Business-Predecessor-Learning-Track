@@ -130,6 +130,7 @@ specifications/metadata-specification.md
 specifications/controlled-vocabulary.md
 specifications/index-schema.md
 specifications/knowledge-system-specification.md
+tools/INDEX.md when structural validation or repository maintenance is involved
 ```
 
 Then ask it to follow the repository rules.
@@ -198,6 +199,7 @@ Current top-level structure:
   README.md
   LLM_ALIGNMENT.md
   INDEX.md
+  phase-plan.md
 
   specifications/
     INDEX.md
@@ -247,6 +249,10 @@ Current top-level structure:
 
   templates/
     INDEX.md
+
+  tools/
+    INDEX.md
+    validate_repository_minimal.py
 ```
 
 ---
@@ -284,6 +290,26 @@ Repository-wide CSV indexes live in `indexes/` and make cross-target comparison 
 Whenever a file or directory is created, renamed, moved, or deleted, the affected local indexes should be updated immediately.
 
 Whenever a target, report, source, fact, claim, lesson, pattern, principle, relationship, or theme is formalized, the relevant CSV index should be updated.
+
+---
+
+## Minimal validation gate
+
+Before structural or index-changing work is considered complete, run the minimal validator when available:
+
+```bash
+python tools/validate_repository_minimal.py
+```
+
+The minimal validator is read-only. It must not modify files, repair files, fetch network resources, or judge historical content quality.
+
+Its first responsibility is structural integrity:
+
+- every directory has `INDEX.md`;
+- every `INDEX.md` lists direct files and direct subdirectories only;
+- CSV headers match the current repository index schema;
+- repository-relative paths in selected indexes exist;
+- IDs are unique within each CSV index.
 
 ---
 
@@ -333,6 +359,6 @@ It is intended to study people, organizations, systems, incentives, decisions, o
 
 When learning happens, preserve it.
 
-When a target is selected, expanded, compared, corrected, or synthesized, the repository should be updated in the proper location, with sources, metadata, controlled vocabulary, local indexes, and CSV indexes maintained.
+When a target is selected, expanded, compared, corrected, or synthesized, the repository should be updated in the proper location, with sources, metadata, controlled vocabulary, local indexes, CSV indexes, and validation status maintained.
 
 The repository should become more useful over time instead of repeatedly rediscovering the same information.
