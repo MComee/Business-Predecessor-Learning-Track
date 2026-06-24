@@ -17,6 +17,7 @@ Local navigation index for the repository root.
 - `knowledge/` — Source-linked facts, claims, lessons, patterns, and principles.
 - `synthesis/` — Cross-target lessons, recurring patterns, and higher-level synthesis artifacts.
 - `templates/` — Reusable templates for target profiles, source records, and synthesis artifacts.
+- `tools/` — Read-only repository validation and maintenance tools.
 
 ## Rule
 
