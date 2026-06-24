@@ -1,0 +1,19 @@
+id: target:person:cornelius-vanderbilt
+title: Cornelius Vanderbilt
+target_type: person
+status: developing
+primary_pillars:
+  - business-and-organization
+  - capital-and-wealth
+industries:
+  - transportation
+  - railroads
+  - shipping
+period:
+  start: 1794
+  end: 1877
+geography:
+  - united-states
+related_targets: []
+source_status: developing
+confidence: medium
