@@ -4,6 +4,7 @@ Local navigation index for the Cornelius Vanderbilt historical target.
 
 ## Files
 
+- `target.yaml` — Structured target metadata for Cornelius Vanderbilt.
 - `profile.md` — Main target profile for Cornelius Vanderbilt.
 - `timeline.md` — Chronological spine for Vanderbilt research.
 - `historical-context.md` — Historical context for Vanderbilt's era, markets, technology, law, and capital environment.
