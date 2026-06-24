@@ -48,6 +48,7 @@ Before doing repository work, the LLM should read or consult these files when av
 9. `specifications/knowledge-system-specification.md`
 10. Relevant local `INDEX.md` files for the target or directory being modified
 11. Relevant CSV files in `indexes/` when creating or formalizing targets, reports, sources, facts, claims, lessons, patterns, principles, relationships, or themes
+12. `tools/INDEX.md` and relevant validation tools when structural or index-changing work is involved
 
 If a required file is unavailable, the LLM must say what is unavailable and proceed conservatively.
 
@@ -217,7 +218,7 @@ Each recommendation should explain:
 
 ---
 
-## 8. Repository Structure and Indexing Rules
+## 8. Repository Structure, Indexing, and Validation Rules
 
 The repository must remain navigable for humans and LLMs.
 
@@ -236,6 +237,16 @@ Whenever a file or directory is created, renamed, moved, or deleted, all affecte
 
 When repository-wide objects are formalized, the relevant CSV indexes must be updated.
 
+When structural or index-changing work is performed, the minimal validator should be run when available:
+
+```bash
+python tools/validate_repository_minimal.py
+```
+
+The minimal validator is read-only. It reports structural and index integrity failures but must not modify files, auto-repair files, fetch network resources, or judge historical interpretation quality.
+
+Validation failures should be treated as repository integrity work, not as content research work.
+
 ---
 
 ## 9. Output Discipline
@@ -253,6 +264,7 @@ Before content is saved to this repository, the LLM must verify that it is:
 - metadata-compliant when applicable;
 - vocabulary-aware when applicable;
 - indexed locally and globally when applicable;
+- validation-aware when structure or indexes changed;
 - useful for learning;
 - modular enough to expand later.
 
